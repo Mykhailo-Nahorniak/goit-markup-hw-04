@@ -10,6 +10,7 @@
   --dark-bg-color: #2f303a;
   --body-bg-color: #ffffff;
   --btn-text-accent-color: #ffffff;
+  --icon-cont-bg: #F5F4FA;
 }
 
 body {
@@ -139,14 +140,33 @@ header .company-logo .secondary-color {
   color: var(--main-text-color);
 }
 
+.contact-icon-envelope {
+  width: 16px;
+  height: 12px;
+  fill: var(--main-text-color);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.contact-icon-tel {
+  width: 10px;
+  height: 16px;
+  fill: var(--main-text-color);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .link.current {
   color: var(--accent-color);
 }
+
+
 
 /* ---------------- HERO ---------------- */
 .hero {
@@ -218,6 +238,21 @@ header .company-logo .secondary-color {
 .features-item:last-child {
   margin-right: 0;
 }
+
+.icon-container {
+  height: 120;
+  background: var(--icon-cont-bg);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+}
+
+
 
 .features-title {
   font-weight: 700;
