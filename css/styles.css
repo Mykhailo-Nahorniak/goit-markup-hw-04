@@ -154,6 +154,20 @@ header .company-logo .secondary-color {
   background-color: var(--dark-bg-color);
 }
 
+.hero-img {
+  background-image: url(../images/hero-bg-img.jpg);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-overlay {
+  background-color: rgba(47, 48, 58, 0.4);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-title {
   max-width: 700px;
   font-weight: 900;
