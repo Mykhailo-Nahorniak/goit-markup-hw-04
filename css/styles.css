@@ -11,6 +11,7 @@
   --body-bg-color: #ffffff;
   --btn-text-accent-color: #ffffff;
   --icon-cont-bg: #F5F4FA;
+  --thumb-color: #AFB1B8;
 }
 
 body {
@@ -159,6 +160,10 @@ header .company-logo .secondary-color {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+}
+
+.link:hover .icon-hover,
+.link:focus .icon-hover {
   fill: var(--accent-color);
 }
 
@@ -335,6 +340,7 @@ header .company-logo .secondary-color {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .team-item {
@@ -343,6 +349,36 @@ header .company-logo .secondary-color {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.social-trumb {
+  width: 20px;
+  height: 20px;
+  fill: var(--thumb-color);
+}
+
+.social-list-item:hover,
+.social-list-item:focus {
+  background-color: #2196F3;
+}
+
+.social-list-item:hover .social-trumb {
+  fill: #F5F4FA;
+  color: #F5F4FA;
 }
 
 /* ---------------- FOOTER ---------------- */
