@@ -368,6 +368,10 @@ header .company-logo .secondary-color {
   fill: var(--thumb-color);
 }
 
+.connect .social-list-item {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .social-list-item:hover,
 .social-list-item:focus {
   background-color: #2196F3;
@@ -417,7 +421,8 @@ header .company-logo .secondary-color {
 /* ---------------- FOOTER ---------------- */
 .footer {
   background-color: var(--dark-bg-color);
-  padding: 50px 0px;
+  padding: 60px 0px;
+  display: flex;
 }
 
 .footer .container .company-logo {
@@ -430,6 +435,13 @@ header .company-logo .secondary-color {
   color: var(--footer-secondary-logo-color);
 }
 
+.footer-flex-box {
+  width: 231px;
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
 .address,
 .adress-item:not(:last-child) {
   margin-bottom: 9px;
@@ -437,6 +449,7 @@ header .company-logo .secondary-color {
 
 .address,
 .address a:link {
+  display: inline-block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -451,6 +464,22 @@ header .company-logo .secondary-color {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
+}
+
+.connect {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.footer-connect-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--btn-text-accent-color);
+  margin-bottom: 20px;
 }
 
 /* ---------------- PORTFOLIO PAGE---------------- */
