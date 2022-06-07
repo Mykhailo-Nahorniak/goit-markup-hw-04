@@ -97,6 +97,11 @@ header .company-logo .secondary-color {
   display: block;
 }
 
+.contact-list-item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-flex,
 .nav-list,
 .contact-list {
@@ -224,7 +229,7 @@ header .company-logo .secondary-color {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: #188ce8;
+  background-color: #188ce8;
 }
 
 /* ---------------- FEATURES ---------------- */
@@ -274,6 +279,10 @@ header .company-logo .secondary-color {
 }
 
 /* ---------------- GALLERY ---------------- */
+.gallery.section {
+  padding-top: 0;
+}
+
 .gallery-title {
   font-weight: 700;
   font-size: 36px;
@@ -473,6 +482,14 @@ header .company-logo .secondary-color {
   flex-direction: column;
 }
 
+.address-text {
+  margin-bottom: 9px;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-connect-header {
   font-weight: 700;
   font-size: 14px;
@@ -488,7 +505,7 @@ header .company-logo .secondary-color {
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter-item {
