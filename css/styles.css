@@ -620,6 +620,6 @@ header .company-logo .secondary-color {
 
 .portfolio-container {
   border: 1px solid #eeeeee;
-  border-top-style: none;
+  border-top: 0;
   padding: 20px 24px;
 }
