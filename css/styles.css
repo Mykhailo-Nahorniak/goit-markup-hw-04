@@ -465,6 +465,8 @@ header .company-logo .secondary-color {
 
 .footer .container .company-logo {
   display: inline-block;
+  padding: 0;
+  margin-bottom: 24px;
 }
 
 .company-logo .secondary-color {
@@ -473,16 +475,14 @@ header .company-logo .secondary-color {
 }
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-flex-box {
   width: 231px;
-  display: inline-flex;
-  flex-direction: column;
   margin-right: 70px;
 }
 
-.address,
 .adress-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -504,14 +504,6 @@ header .company-logo .secondary-color {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
-}
-
-.connect {
-  width: 206px;
-  height: 80px;
-  padding-top: 32px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .address-text {
