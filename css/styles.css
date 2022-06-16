@@ -141,6 +141,8 @@ header .company-logo .secondary-color {
 }
 
 .contact-list-item .link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -153,7 +155,6 @@ header .company-logo .secondary-color {
   height: 12px;
   fill: var(--main-text-color);
   margin-right: 10px;
-  vertical-align: middle;
 }
 
 .contact-icon-tel {
@@ -161,7 +162,6 @@ header .company-logo .secondary-color {
   height: 16px;
   fill: var(--main-text-color);
   margin-right: 10px;
-  vertical-align: middle;
 }
 
 .link:hover,
@@ -237,7 +237,7 @@ header .company-logo .secondary-color {
 /* ---------------- FEATURES ---------------- */
 .features-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .features-item {
@@ -379,10 +379,9 @@ header .company-logo .secondary-color {
 }
 
 .social-trumb {
-  height: 44px;
-  width: 44px;
+  height: 24px;
+  width: 24px;
   fill: var(--thumb-color);
-  padding: 10px;
 }
 
 .connect .social-list-item {
@@ -394,12 +393,12 @@ header .company-logo .secondary-color {
 }
 
 .social-list-item:hover,
-.social-list-item a:focus {
+.social-list-item a:focus .social-list-item {
   background-color: #2196f3;
 }
 
 .social-list-item:hover .social-trumb,
-.social-list-item a:focus .social-trumb {
+.social-list-item a:focus {
   fill: var(--btn-text-accent-color);
 }
 
@@ -417,13 +416,17 @@ header .company-logo .secondary-color {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .clients-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--thumb-color);
+  border-radius: 4px;
 }
 
 .clients-list-item a {
@@ -432,21 +435,18 @@ header .company-logo .secondary-color {
 
 .clients-trumb {
   fill: var(--thumb-color);
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-  border: 1px solid var(--thumb-color);
-  border-radius: 4px;
+  width: 106px;
+  height: 60px;
 }
 
-.clients-trumb:hover,
-.clients-list-item a:focus .clients-trumb {
+.clients-list-item:hover,
+.clients-list-item:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
 .clients-list-item:hover .clients-trumb,
-.clients-list-item a:focus .clients-trumb {
+.clients-list-item:focus .clients-trumb {
   fill: var(--accent-color);
 }
 
